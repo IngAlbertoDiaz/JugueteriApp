@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -27,7 +28,8 @@ namespace JugueteriApp.Models
         [DisplayName("Compañia")]
         public string Compania { get; set; }
         
-        [Required, Range(1f,1000f, ErrorMessage ="El valor debe ser mayor que 0 y menor que 1000")]
+        [Column(TypeName = "decimal(18,2)")]
+        [Required, Range(1,1000, ErrorMessage ="El valor debe ser mayor que 0 y menor que 1000")]
         public decimal Precio { get; set; }
 
         public Producto()
