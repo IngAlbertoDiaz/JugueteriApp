@@ -75,3 +75,7 @@ Abrir el navegador de preferencia y ingresar a la URL marcada en la consola
 # ApiJugeteria
 Para ingresar a la API de la aplicacion se ingresa a la misma URL de la aplicacion y despues del puerto se agrega "swagger", automaticamente redireccionara a la API
 ![imagen](https://user-images.githubusercontent.com/36839234/110905875-ced7f500-82d0-11eb-9b01-d3212d23f3bb.png)
+
+Alternativamente se pueden hacer pruebas en Postman
+
+![imagen](https://user-images.githubusercontent.com/36839234/110907865-a3a2d500-82d3-11eb-9550-a004e7821ec3.png)
