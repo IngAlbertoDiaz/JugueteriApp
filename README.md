@@ -79,3 +79,6 @@ Para ingresar a la API de la aplicacion se ingresa a la misma URL de la aplicaci
 Alternativamente se pueden hacer pruebas en Postman
 
 ![imagen](https://user-images.githubusercontent.com/36839234/110907865-a3a2d500-82d3-11eb-9550-a004e7821ec3.png)
+
+# Angular App
+Se creo una aplicacion en Angular para consumir el servicio de la API la cual puede descargarse desde aqui: https://github.com/IngAlbertoDiaz/JugueteriAppAngular
