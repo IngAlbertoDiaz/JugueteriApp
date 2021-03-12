@@ -20,7 +20,7 @@ namespace JugueteriApp.Models
         [DisplayName("Descripción")]
         public string Descripcion { get; set; }
         
-        [Range(0, 100, ErrorMessage ="El valor debe ser mayor a 0 y menor que 100")]
+        [Range(0, 100, ErrorMessage ="La edad debe ser mayor a 0 y menor que 100")]
         [DisplayName("Restriccion Edad")]
         public int RestriccionEdad { get; set; }
         
@@ -29,7 +29,7 @@ namespace JugueteriApp.Models
         public string Compania { get; set; }
         
         [Column(TypeName = "decimal(18,2)")]
-        [Required, Range(1,1000, ErrorMessage ="El valor debe ser mayor que 0 y menor que 1000")]
+        [Required, Range(1,1000, ErrorMessage ="El precio debe ser mayor que 0 y menor que 1000")]
         public decimal Precio { get; set; }
 
         public Producto()
