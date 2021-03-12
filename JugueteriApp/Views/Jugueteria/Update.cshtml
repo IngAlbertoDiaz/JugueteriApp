@@ -1,0 +1,59 @@
+﻿@model JugueteriApp.Models.Producto
+@{
+    ViewData["Title"] = "Update";
+}
+
+<form method="post" asp-action="Update">
+    <input asp-for="Id" hidden/>
+    <div class="border col-6 p-5">
+        <div class="form-group row">
+            <h2 class="text-black-50 ">Actualizar informacion del producto</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group ">
+                    <div class="form-group">
+                        <label asp-for="Nombre">Nombre</label>
+                        <input asp-for="Nombre" placeholder="Nombre" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Precio">Precio</label>
+                        <input asp-for="Precio" placeholder="Precio" class="form-control" required />
+                        <span asp-validation-for="Precio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Compania"></label>
+                        <input asp-for="Compania" placeholder="Compañia" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RestriccionEdad"></label>
+                        <input asp-for="RestriccionEdad" min="0" value="0" placeholder="Restriccion de edad" class="form-control" />
+                        <span asp-validation-for="RestriccionEdad" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Descripcion">Descripción</label>
+                        <textarea asp-for="Descripcion" placeholder="Descripción" class="form-control" required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-8 offset-2 text-center row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-info w-75">Actualizar</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-75" asp-action="Index">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

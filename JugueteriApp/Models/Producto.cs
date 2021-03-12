@@ -20,7 +20,7 @@ namespace JugueteriApp.Models
         [DisplayName("Descripción")]
         public string Descripcion { get; set; }
         
-        [Required, Range(0, 100, ErrorMessage ="El valor debe ser mayor a 0 y menor que 100")]
+        [Range(0, 100, ErrorMessage ="El valor debe ser mayor a 0 y menor que 100")]
         [DisplayName("Restriccion Edad")]
         public int RestriccionEdad { get; set; }
         

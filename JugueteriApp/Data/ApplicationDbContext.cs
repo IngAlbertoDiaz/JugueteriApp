@@ -14,6 +14,6 @@ namespace JugueteriApp.Data
 
         }
 
-        public DbSet<Producto> productos { get; set; }
+        public DbSet<Producto> Productos { get; set; }
     }
 }
